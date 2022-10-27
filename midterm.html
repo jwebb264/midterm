@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="midterm.css"> <!--CSS Stylesheet-->
+</head>
+<body>
+    <div class="main"> <!--MAIN-->
+        <div class="navbar"> <!--Navbar Div-->
+            <ul>
+                <li><a href="midterm.html">Home</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="gallery/labrador.html">Labrador</a></li>
+                <li><a href="gallery/frenchie.html">French Bulldog</a></li>
+                <li><a href="gallery/golden.html">Golden Retriever</a></li>
+                <li><a href="gallery/shepard.html">German Shepard</a></li>
+                <li><a href="gallery/poodle.html">Poodle</a></li>
+            </ul>
+            <!--<a href="signup.html">Sign Up</a> NOT INCLUDED Just for testing-->
+        </div> <!--End Navbar-->
+
+    <div class="header"> <!--header div-->
+        <header>
+         <br>   <h1>Welcome</h1>  <br>
+        </header>
+    </div>  <!--header div-->
+
+    <div id="table"> <!--table div-->
+        <table>
+            <caption>5 Most Popular Dogs in the US</caption><br>
+            <tr> 
+                <th></th> <!--image row-->
+                <th>Breed</th>
+                <th>Personality</th>
+                <th></th>
+                <th>Size</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td><a href="gallery/labrador.html"><img id="thumbnail" src="images/lab.jpg" alt="circular image of a chocolate lab"></ahref></td>
+                <td class="breed center"><a href="https://www.akc.org/dog-breeds/labrador-retriever/">Labrador Retriever</a> </td>
+                <td colspan="2" class="personality">Labs are basically the short-haired, crazy cousin of goldens. They make excellent family dogs, love to swim,
+                    and are extremely trainable. They're known for eating things they shouldn't so keep an eye on your socks.</td>
+                <td class="center">Large breed: 50-80 lbs</td> <!--colspan-->
+                <td class="center">11-13 years</td>
+            </tr>
+            <tr>
+                <td><a href="gallery/frenchie.html"><img id="thumbnail" src="images/frenchie.jpg" alt="close-up circular image of a french bulldog"></a></td>
+                <td class="breed center"><a href="https://www.akc.org/dog-breeds/french-bulldog">French Bulldog</a></td>
+                <td colspan="2" class="personality"> This breed is good for people who live in a smaller area, as they shed less and take up less space than a large breed. 
+                    They're excellent with children, but due to their small size, should be supervised with young kids. They are a brachycephalic
+                    breed and tend to have health issues related to their snout shape.</td> <!--colspan-->
+                <td class="center">Small breed: up to 28 lbs</td>
+                <td class="center">10-12 years</td>
+            </tr>
+            <tr>
+                <td><a href="gallery/golden.html"><img id="thumbnail" src="images/golden.jpg" alt="circular image of a golden retriever looking down"></a></td>
+                <td class="breed center"><a href="https://www.akc.org/dog-breeds/golden-retriever/">Golden Retriever</a></td>
+                <td colspan="2" class="personality"> Goldens are well-known family dogs and are likely to love everyone. They are terrible guard dogs, but are excellent with children of all 
+                    ages. They are known as "velcro dogs" and want to be with their owners all the time.</td> <!--colspan-->
+                <td class="center">Large breed: 55-75 lbs</td>
+                <td class="center">10-12 years</td>
+            </tr>
+            <tr>
+                <td><a href="gallery/shepard.html"><img id="thumbnail" src="images/shepard.jpg" alt="circular image of a german shepard"></a></td>
+                <td class="breed center"><a href = "https://www.akc.org/dog-breeds/german-shepherd-dog/">German Shepherd</a></td>
+                <td colspan="2" class="personality"> An excellent family watchdog, shepards bond closely with their family. They are excellent with children of all ages
+                    but have a tendency to bark. Unlike other breeds, Shepards tend to be aloof initially and do not warm up to strangers for a bit. </td> <!--colspan-->
+                <td class="center">Large breed: 50-90 lbs.</td>
+                <td class="center">7-10 years</td>
+            </tr>
+            <tr>
+                <td><a href="gallery/poodle.html"><img id="thumbnail" src="images/poodle.jpg" alt="circular image of a poodle at the edge of a body of water"></a></td>
+                <td class="breed center"><a href="https://www.akc.org/dog-breeds/poodle-standard/">Poodle</a></td>
+                <td colspan="2" class="personality"> Excellent family dog. However, this dog is high energy and extremely intelligent. Poodles of all sizes require a job to be happy.
+                    This dog does not shed and will need to be groomed regularly to prevent matting. </td><!--colspan-->
+                <td class="center">Bred in toy, miniature, and standard sizes. Standard: 40-70 lbs</td>
+                <td class="center">10-18 years</td>
+            </tr>
+        </table> <!--end table-->
+    </div>
+    <div class="form"> <!--Form Div-->
+        <form action="signup.html" method="post"> <!--No JS - form does not send data-->
+            <p><b>Your Information</b></p>
+            <ul>
+                <li><label for="signup-Name">Name:<input type="text" name="name"></label></li>
+                <li><label for="signup-Address">Address: <input type="text" name="address" id=""></label></li>
+                <li><label for="signup-Phone">Phone Number: <input type="tel" name="phone"></label></li>
+                <li><label for="signup-email">Email: <input type="email" name="email"></label></li>
+            </ul>
+            <p><b>Sign Up</b> for our newsletter</p> <!--Newsletter signup. Could've used mailchip API with JS-->
+            <ul>
+                <li><input type="checkbox" name="newsletterY" value="yes" checked> Yes </li>
+                <li><input type="checkbox" name="newsletterN" value="no"> No </li>
+            </ul>
+                <img src="images/pawPrint.svg" alt="image of an orange paw print"><input type="submit" value="Submit"><a href="signup.html"></a> <!--svg img-->
+        </form>
+        </div> <!--end form-->
+    </div> <!--end main div-->
+    <footer>
+        <p id="tiny">Image courtsey of Hilmy Abiyyu Asad</p> <!--svg graphic attribution from FlatIcon-->
+        <br>
+        <p id="tiny">Juliana Huff © 2022</p>
+    </footer>
+</body>
+</html>
